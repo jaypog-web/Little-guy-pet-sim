@@ -8,9 +8,26 @@ $("#apple").on("click", function () {
     $(".littleGuy").html("<img src='images/chew.gif'>");
 });
 
-$("#sleep").on("click", function () {
+$("#kibble").on("click", function () {
+    $(".littleGuy").html("<img src='images/full.gif'>");
+});
+
+$("#pear").on("click", function () {
+    $(".littleGuy").html("<img src='images/stop.gif'>");
+});
+
+$("#cold").on("click", function () {
     $(".littleGuy").html("<img src='images/sleep.png'>");
 });
+
+$("#blankie").on("click", function () {
+    $(".littleGuy").html("<img src='images/sleep-blankie.png'>");
+});
+
+$("#footOut").on("click", function () {
+    $(".littleGuy").html("<img src='images/sleep-foot.png'>");
+});
+
 
 $("#scarf").on("click", function () {
     $(".littleGuy").html("<img src='images/scarf.png'>");
