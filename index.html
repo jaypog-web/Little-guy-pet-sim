@@ -4,7 +4,7 @@
 <head>
     <title>Little Guy Pet Sim</title>
     <meta charset="utf - 8">
-    <!-- Today on things I learned that Made Me Pull Out My Hair: in order to link a CSS sheet, the 'rel' must include the word 'stylesheet' specifically...! o.0 -->
+    <!-- Today on Things I Learned That Made Me Pull Out My Hair: in order to link a CSS sheet, the 'rel' must include the word 'stylesheet' specifically...! o.0 -->
     <link rel="css stylesheet" href="dudeStyle.css">
 </head>
 
@@ -23,14 +23,26 @@
 
             <div class="menuPadding">
                 <div class="buttonGrid">
-                    <div class="menuButton" id="feed">Feed</div>
+                    <div class="menuButton" id="feed">Feed
+                        <div class="foodMenu">
+                            <div class="food" id="apple"><img src="images/apple2.png"></div>
+                            <div class="food" id="chicken"><img src="images/chicken.png"></div>
+                            <div class="food" id="kibble"><img src="images/kibble.png"></div>
+                            <div class="food" id="fish"><img src="images/fish.png"></div>
+                            <div class="food" id="croissant"><img src="images/croissant2.png"></div>
+                            <div class="food" id="pear"><img src="images/pear.png"></div>
+                        </div>
+                    </div>
                     <div class="menuButton" id="sleep">Sleep</div>
                     <div class="menuButton" id="scarf">Dress for the Weather</div>
-                    <div class="menuButton" id="poke">Bother</div>
+                    <a href="#" id="togglePoke">
+                        <div class="menuButton" id="pokeL">Poke (->)</div>
+                    </a>
                     <div class="menuButton" id="compress">Compress</div>
                     <div class="menuButton" id="reset">Reset</div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
