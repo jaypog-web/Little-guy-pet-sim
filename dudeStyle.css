@@ -1,0 +1,109 @@
+:root {
+    --LightGrey: #e6e6e6;
+    --MedGrey: #c4c4c4;
+}
+
+/* Normalizing */
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body.fullPage {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+/* General rules */
+
+h1 {
+    font-family: Arial;
+    text-align: center;
+}
+
+header {
+    background-color: pink;
+    margin: 0;
+}
+
+div {
+    margin: 0;
+}
+
+.splitScreen {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    /* min-height: 800px; */
+    border-style: dashed;
+    border-width: 1px;
+    border-color: black;
+}
+
+.buttonGrid {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.house {
+    display: flex;
+
+    background-image: url('../images/background.png');
+    background-size: 100% 100%;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Causes issues in scaling around 950px width */
+
+    padding-top: 40px;
+}
+
+.littleGuy {
+    /* position: absolute; */
+    /* bottom: 0; */
+    max-width: 50%;
+}
+
+.menuPadding {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+
+    margin: 10px;
+    padding: 40px;
+}
+
+.menuButton {
+    font-family: courier new;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+
+    border-radius: 10px;
+
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.menuButton:hover {
+    background-color: var(--LightGrey);
+    cursor: pointer;
+}
+
+.clickedButton {
+    background-color: var(--MedGrey);
+}
